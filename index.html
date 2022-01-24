@@ -18,15 +18,17 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body class="main-bg">
+<body>
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="close" role="button">
+    <label class="close-menu-label" for="close-menu" title="close-menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1>
+            <h1 onclick="getElementById('close-menu').checked = false">
                 <a href="#">Logo</a>
             </h1>
 
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false">
                     <li><a href="#intro">Intro</a></li>
                     <li><a href="#dicas">dicas</a></li>
                     <li><a href="#grid-one">descrição1</a></li>
@@ -50,7 +52,7 @@
                     administrar o tempo.</p>
             </div>
             <div class="intro-img">
-                <img src="./assets/img/production.svg" alt="picture men in production">
+                <img class="img-top" src="./assets/img/production.svg" alt="picture men in production">
             </div>
         </div>
     </section>
@@ -169,11 +171,8 @@
     <section id="contact" class="intro white-bg section">
         <div class="main-content intro-content">
             <div class="intro-text-content">
-                <h2>Dicas simples para aumentar a produtividade</h2>
-                <p>Todos nós gostaríamos de ser mais produtivos. Quem quer relembrar o dia vivido e perceber que perdeu
-                    tempo ou oportunidades? O problema, no entanto, é que vivemos em uma sociedade rápida e multitarefa,
-                    então é fácil sentir-se desgastado. Isso pode acabar com a habilidade de permanecer focado e
-                    administrar o tempo.</p>
+                <h2>Entre em contato</h2>
+                <p> “Estar ocupado nem sempre significa trabalho de verdade. O objetivo de todo trabalho é produção ou conquista, e para qualquer um desses objetivos deve haver previsão, sistematização, planejamento, inteligência e propósito honesto, assim como transpiração. Parecer estar fazendo não é fazer.” – Thomas A. Edison, inventor.</p>
             </div>
             <div class="intro-img">
                 <img src="./assets/img/contact.svg" alt="picture men in production">
@@ -209,6 +208,7 @@
     <footer id="footer" class="footer main-bg">
         <p><a rel="nofollow" target="_blanck" href="https://www.linkedin.com/in/junio-dos-santos-rodrigues-1a3538212/">Feito com <span class="heart">❤</span> por Junio Rodrigues</a> </p>
     </footer>
+    <a class="back-to-top" href="#">➤</a>
 </body>
 
 </html>
