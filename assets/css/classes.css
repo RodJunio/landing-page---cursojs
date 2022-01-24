@@ -12,12 +12,16 @@
 .main-content {
     max-width: 120rem;
     margin: 0 auto;
-    padding: 8rem var(--gap);
+    padding: 10rem var(--gap);
 }
 .section {
     min-height: 100vh;
 }
 
 .menu-spacing {
-    height: 6.5rem;
+    height: 65px;
+}
+body.full-width {
+    width: 100%;
+    flex-grow: 1 1 100%;
 }
